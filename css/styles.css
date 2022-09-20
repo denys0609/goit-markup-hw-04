@@ -110,7 +110,6 @@ body {
   color: var(--color-blue);
 }
 .contacts-wrap {
-  margin-right: auto;
   margin-left: auto;
 }
 .header-contacts {
@@ -276,12 +275,12 @@ body {
 .social-team:hover,
 .social-team:focus {
   background-color: var(--color-blue);
+  color: var(--color-white);
 }
 
-.team-socials .social-icon:hover svg,
-.team-socials .social-icon:focus svg {
-  fill: var(--color-white);
-  background-color: var(--color-blue);
+.social-team:hover svg,
+.social-team:focus svg {
+  fill: currentColor;
 }
 /* Постійні клієнти секція */
 .regular-clients .main-title {
@@ -383,10 +382,11 @@ body {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--color-blue);
+  color: var(--color-white);
 }
-.footer-socials .social-icon:hover svg,
-.footer-socials .social-icon:focus svg {
-  background-color: var(--color-blue);
+.social-link:hover svg,
+.social-link:focus svg {
+  fill: currentColor;
 }
 
 /* Портфоліо приклади робіт */
@@ -443,6 +443,7 @@ body {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  color: var(--descr-text-color);
 }
 .work-item {
   width: 370px;
